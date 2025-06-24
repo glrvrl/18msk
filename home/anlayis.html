@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eğitim Anlayışımız - Siraç Koleji</title>
+  <link rel="icon" type="image/png" href="../image/siraj logo.jpg" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .education-header {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+              url('../image/anasayfa1.JPG') center/cover no-repeat;
+  color: white;
+  padding: 160px 0 120px; /* Üst ve alt boşluğu artırdık */
+  min-height: 500px;      /* Minimum yükseklik ekledik */
+  text-align: center;
+  background-attachment: fixed; /* İsteğe bağlı: Parallax etkisi */
+}
+
+    
+    .education-content {
+      padding: 60px 0;
+      background-color: #f9f9f9;
+    }
+    
+    .education-principles {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      padding: 40px;
+      margin-bottom: 40px;
+    }
+    
+    .principle-card {
+      padding: 25px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      transition: all 0.3s ease;
+      border-left: 4px solid #3498db;
+      background-color: #f8fafc;
+    }
+    
+    .principle-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+      border-left: 4px solid #e74c3c;
+    }
+    
+    .principle-icon {
+      font-size: 2.5rem;
+      color: #3498db;
+      margin-bottom: 20px;
+    }
+    
+    .montessori-section {
+      background: linear-gradient(135deg, #2c3e50 0%, #4ca1af 100%);
+      color: white;
+      padding: 60px 0;
+      border-radius: 10px;
+      margin: 40px 0;
+    }
+    
+    .quote-section {
+      background-color: #f8f9fa;
+      border-left: 5px solid #f9a826;
+      padding: 30px;
+      margin: 40px 0;
+      font-style: italic;
+      font-size: 1.1rem;
+    }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <div class="navbar-brand d-flex align-items-center">
+  <img src="../image/siraj logo.jpg" alt="Logo" class="rounded-circle me-2" style="width: 50px; height: 50px;">
+  <h1 class="mb-0 fs-5 text-white">18 Mart Siraç <span>Koleji</span></h1>
+</div>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#siracNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="siracNavbar">
+        <ul class="navbar-nav ms-auto">
+          <!-- Anasayfa -->
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Anasayfa</a>
+          </li>
+
+          <!-- Kurumsal -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" data-bs-toggle="dropdown">Kurumsal</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item active" href="anlayis.html">Eğitim Anlayışımız</a></li>
+              <li><a class="dropdown-item" href="misyon.html">Misyon & Vizyon</a></li>
+              <li><a class="dropdown-item" href="tarihce.html">Tarihçe</a></li>
+              <li><a class="dropdown-item" href="kultur.html">Okul Kültürü</a></li>
+            </ul>
+          </li>
+
+          <!-- Eğitim Programları -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Eğitim Programları</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="manevi.html">Manevi Eğitim</a></li>
+              <li><a class="dropdown-item" href="degerler.html">Değerler Eğitimi</a></li>
+              <li><a class="dropdown-item" href="yabancidil.html">Yabancı Dil</a></li>
+              <li><a class="dropdown-item" href="rehberlik.html">Rehberlik</a></li>
+            </ul>
+          </li>
+
+          <!-- Atölyeler -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Atölyeler</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="robotik.html">Robotik Kodlama</a></li>
+              <li><a class="dropdown-item" href="gorsel.html">Görsel Sanatlar ve Ahşap</a></li>
+              <li><a class="dropdown-item" href="mutfak.html">Mutfak Atölyesi</a></li>
+              <li><a class="dropdown-item" href="tasavvuf.html">Tasavvuf Müziği</a></li>
+              <li><a class="dropdown-item" href="kozmik.html">Montessori Kozmik</a></li>
+            </ul>
+          </li>
+
+          <!-- Etkinlikler -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Etkinlikler</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="oyun.html">Oyun ve Fiziki Etkinlikler</a></li>
+              <li><a class="dropdown-item" href="kulubuler.html">Kulübüler ve P4C</a></li>
+              <li><a class="dropdown-item" href="sosyalyardim.html">Sosyal Yardım Projeleri</a></li>
+               <li><a class="dropdown-item" href="Helal ve Sağlıklı.html">Helal ve Sağlıklı</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link"  href="ogretmen-kadromuz.html">Öğretmen Kadromuz</a></li>
+          <li class="nav-item"><a class="nav-link " href="galeri.html">Galeri</a></li>
+          <li class="nav-item"><a class="nav-link" href="iletisim.html">İletişim</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<!-- EDUCATION HEADER -->
+<section class="education-header">
+  <div class="container">
+    <h1 class="display-4 fw-bold">Eğitim Anlayışımız</h1>
+    <p class="lead">Montessori Destekli Değer Yaklaşımı ile Geleceğin Liderlerini Yetiştiriyoruz</p>
+  </div>
+</section>
+
+<!-- EDUCATION CONTENT -->
+<section class="education-content">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <div class="education-principles">
+          <h2 class="text-center mb-5">Eğitim Felsefemiz</h2>
+          
+          <p class="lead text-center mb-5">
+            Her insanın neyi, nasıl, en iyi şekilde öğreneceğini ancak rehberlerinin liderliğiyle kendisinin belirleyebileceğini esas alan Montessori Destekli Değer Yaklaşımının ilkeleri ile bireyler; İslami kültür doğrultusunda tasarlanmış eğitim ortamlarında özgür iradelerini kullanarak fıtratlarını şekillendirirler.
+          </p>
+          
+          <div class="row">
+            <div class="col-md-6">
+              <div class="principle-card">
+                <div class="principle-icon">
+                  <i class="fas fa-brain"></i>
+                </div>
+                <h4>Çoklu Zeka Kuramı</h4>
+                <p>Her çocuğun öğrenme şekli ve zeka türü farklıdır. Bu nedenle kurumumuzda çoklu zeka kuramı doğrultusunda eğitim verilmekte ve bu suretle her bir çocuk için en yüksek başarı hedeflenmektedir.</p>
+              </div>
+            </div>
+            
+            <div class="col-md-6">
+              <div class="principle-card">
+                <div class="principle-icon">
+                  <i class="fas fa-hands-helping"></i>
+                </div>
+                <h4>Değerler Eğitimi</h4>
+                <p>Başarıya değer katan, geçmişini unutmayan, güvenilir ve ahlaklı nesiller yetiştirecek eğitim anlayışı ile hareket edilmektedir.</p>
+              </div>
+            </div>
+            
+            <div class="col-md-6">
+              <div class="principle-card">
+                <div class="principle-icon">
+                  <i class="fas fa-bridge"></i>
+                </div>
+                <h4>Kültürel Köprü</h4>
+                <p>Bu bakış açısı; ecdadı ile torunları arasında sağlam bir köprü kurarak, vicdanın ziyasi ve akün nuru ile hakikate ulaştıran bir akademik eğitim anlayışını benimsemektedir.</p>
+              </div>
+            </div>
+            
+            <div class="col-md-6">
+              <div class="principle-card">
+                <div class="principle-icon">
+                  <i class="fas fa-seedling"></i>
+                </div>
+                <h4>Bireysel Gelişim</h4>
+                <p>Öğrencilerimizin bireysel yeteneklerini keşfetmelerine ve potansiyellerini en üst düzeyde gerçekleştirmelerine olanak sağlayan bir eğitim modeli uyguluyoruz.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="montessori-section text-center">
+          <h3 class="mb-4">Montessori Destekli Eğitim Modeli</h3>
+          <p class="mb-4">Montessori eğitim felsefesini İslami değerlerle harmanlayarak, çocuklarımızın hem dünyevi hem de uhrevi gelişimlerini destekliyoruz. Özgür seçim, öz disiplin ve kendini yönetme becerilerini geliştiren bu yaklaşım, öğrencilerimizin yaşam boyu öğrenen bireyler olmalarını sağlıyor.</p>
+          <a href="kozmik.html" class="btn btn-light">Montessori Atölyelerimizi Keşfedin</a>
+        </div>
+        
+        <div class="quote-section">
+          <p>"Eğitim, çocuğa bilgi yüklemek değil, onun içindeki cevheri işleyerek ortaya çıkarmaktır."</p>
+          <p class="text-end fw-bold">- Maria Montessori</p>
+        </div>
+        
+        <div class="text-center mt-5">
+          <a href="iletisim.html" class="btn btn-primary btn-lg me-3">Bize Ulaşın</a>
+          <a href="galeri.html" class="btn btn-outline-primary btn-lg">Eğitim Ortamlarımızı Görün</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 mb-4 mb-lg-0">
+        <div class="footer-logo">
+          <i class="fas fa-child"></i>
+          <h5>18 Mart Siraç <span>Koleji</span></h5>
+        </div>
+        <p>2007 yılında kurulan Siraç Koleji, güçlü değerlerle donanmış nesiller yetiştirir. Öğrencilerimizin akademik, sosyal ve manevi gelişimini ön planda tutuyoruz.</p>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/18MartSiracKoleji/" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/18martsirackoleji/" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="footer-title">İletişim</h5>
+        <div class="footer-contact">
+          <p><i class="fas fa-map-marker-alt"></i> Kalabaklı/Kapaz, Çanakkale</p>
+          <p><i class="fas fa-phone"></i> +90 543 717 8217</p>
+          <p><i class="fas fa-envelope"></i> bilgi@18martsirac.com</p>
+          <p><i class="fas fa-clock"></i> Pzt-Cuma: 08:00 - 17:00</p>
+        </div>
+      </div>
+      
+      <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+        <h5 class="footer-title">Hızlı Linkler</h5>
+        <ul class="footer-links list-unstyled">
+          <li><a href="index.html">Anasayfa</a></li>
+          <li><a href="anlayis.html">Eğitim Anlayışımız</a></li>
+          <li><a href="galeri.html">Galeri</a></li>
+          <li><a href="iletisim.html">İletişim</a></li>
+          <li><a href="rehberlik.html">Rehberlik</a></li>
+        </ul>
+      </div>
+      
+      <div class="col-lg-3 col-md-6">
+        <h5 class="footer-title">E-Bülten Aboneliği</h5>
+        <p>Etkinlik ve duyurularımızdan haberdar olmak için e-bültenimize abone olun.</p>
+        <form>
+          <div class="input-group mb-3">
+            <input type="email" class="form-control" placeholder="E-posta adresiniz">
+            <button class="btn btn-warning" type="submit">Abone Ol</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    
+    <div class="copyright">
+      <small>&copy; 2007-2023 Siraç Koleji. Tüm Hakları Saklıdır.</small>
+      <p class="mt-2"><small>www.libmarktiracekteji.com</small></p>
+    </div>
+  </div>
+</footer>
+<script src="../js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
