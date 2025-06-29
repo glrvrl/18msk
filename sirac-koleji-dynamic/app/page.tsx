@@ -1,103 +1,197 @@
-import Image from "next/image";
+import Head from 'next/head';
+import Script from 'next/script';
+import ClientCarouselWrapper from '../components/ClientCarouselWrapper';
+import ClientActivitySlider from '../components/ClientActivitySlider';
+import ClientHeader from '../components/ClientHeader';
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <>
+      <Head>
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        {/* Temporary comment to trigger rebuild */}
+        <title>Ana Sayfa - Sirac Koleji</title>
+        <link rel="icon" type="image/png" href="/image/siraj logo.jpg" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+        <link rel="stylesheet" href="/css/style.css" />
+        <link rel="stylesheet" href="/css/index.css" />
+        </Head>
+        {/* HEADER */}
+        <ClientHeader />
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+        {/* HERO */}
+        <section className="hero-video-section position-relative text-white d-flex align-items-center" style={{ height: '100vh', overflow: 'hidden' }}>
+          {/* Video Background */}
+          <ClientCarouselWrapper />
+
+          {/* Karartma efekti */}
+          <div className="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50 z-0"></div>
+
+          {/* Overlay Content */}
+          <div className="container text-center z-1 fade-in-up">
+            <h1 className="display-4 fw-bold mb-3">Geleceğe Yön Veren Eğitim</h1>
+            <p className="lead mb-5">Montessori destekli yaklaşımımızla özgüvenli, erdemli, üretken ve değerlerine sahip çıkan bireyler yetiştiriyoruz.</p>
+          </div>
+
+          {/* Sağ Alt Butonlar */}
+          <div className="position-absolute bottom-0 end-0 m-4 z-1 d-flex flex-column flex-md-row gap-2">
+            <a href="/iletisim" className="btn btn-primary btn-lg me-3">Bize Ulaşın</a>
+            <a href="/iletisim" className="btn btn-primary btn-lg me-3">Başvur</a>
+          </div>
+        </section>
+
+        {/* FEATURES */}
+        <section className="services" id="services">
+          <div className="container">
+            <div className="section-title">
+              <h2>En İyi Hizmetlerimiz</h2>
+              <p>Çocuklarınızın gelişimi için özel olarak tasarlanmış programlar</p>
+            </div>
+            <div className="services-grid">
+              <div className="service-card">
+                <div className="service-icon">
+                  <i className="fas fa-futbol"></i>
+                </div>
+                <h3>Spor Sınıfı</h3>
+                <p>Çocukların fiziksel gelişimini destekleyen, eğlenceli ve güvenli spor aktiviteleri.</p>
+              </div>
+              <div className="service-card">
+                <div className="service-icon">
+                  <i className="fas fa-palette"></i>
+                </div>
+                <h3>Resim Sınıfı</h3>
+                <p>Yaratıcılıklarını geliştirmek için özel olarak tasarlanmış sanat atölyeleri.</p>
+              </div>
+              <div className="service-card">
+                <div className="service-icon">
+                  <i className="fas fa-music"></i>
+                </div>
+                <h3>Müzik ve Dans</h3>
+                <p>Ritm duygusu ve beden koordinasyonunu geliştiren müzik ve dans dersleri.</p>
+              </div>
+              <div className="service-card">
+                <div className="service-icon">
+                  <i className="fas fa-book"></i>
+                </div>
+                <h3>Okuma Köşesi</h3>
+                <p>Erken yaşta okuma alışkanlığı kazandıran zengin kütüphane ve etkinlikler.</p>
+              </div>
+              <div className="service-card">
+                <div className="service-icon">
+                  <i className="fas fa-seedling"></i>
+                </div>
+                <h3>Doğa Atölyesi</h3>
+                <p>Çocukların doğayı keşfedeceği ve çevre bilinci kazanacağı etkinlikler.</p>
+              </div>
+              <div className="service-card">
+                <div className="service-icon">
+                  <i className="fas fa-utensils"></i>
+                </div>
+                <h3>Sağlıklı Beslenme</h3>
+                <p>Uzman diyetisyenler tarafından hazırlanan sağlıklı ve lezzetli menüler.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* ABOUT US */}
+        <section className="activities-section py-5 bg-light">
+          <div className="container">
+            <h2 className="section-title text-center mb-5">Yakın Zamanda Yaptıklarımız</h2>
+            <ClientActivitySlider />
+          </div>
+        </section>
+
+        {/* TESTIMONIALS */}
+        <section className="testimonials" id="testimonials">
+          <div className="container testimonial-container">
+            <div className="section-title">
+              <h2>Mutlu Müşterilerimiz!</h2>
+              <p>Velilerimizin Sirac Koleji hakkındaki düşünceleri</p>
+            </div>
+            <div className="testimonial">
+              <p>"Çocuğum Sirac Koleji'ne başladığından beri sosyal becerilerinde inanılmaz bir gelişme gördük. Öğretmenlerin ilgisi ve sıcak yaklaşımı için teşekkür ederiz."</p>
+              <div className="customer">
+                <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Müşteri" className="customer-img" />
+                <div className="customer-info">
+                  <h4>Elif Öztürk</h4>
+                  <p>Ahmet'in Annesi</p>
+                </div>
+              </div>
+            </div>
+            <div className="testimonial">
+              <p>"Oğlum her sabah okula gitmek için can atıyor. Zengin aktiviteler ve güvenli ortam sayesinde biz de çok memnunuz. Kesinlikle tavsiye ediyorum."</p>
+              <div className="customer">
+                <img src="https://randomuser.me/api/portraits/men/41.jpg" alt="Müşteri" className="customer-img" />
+                <div className="customer-info">
+                  <h4>Varol Arslan</h4>
+                  <p>Efe'nin Babası</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* FOOTER */}
+        <footer>
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-4 mb-4 mb-lg-0">
+                <div className="footer-logo">
+                  <i className="fas fa-child"></i>
+                  <h5>18 Mart Sirac <span>Koleji</span></h5>
+                </div>
+                <p>2007 yılında kurulan Sirac Koleji, güçlü değerlerle donanmış nesiller yetiştirir. Öğrencilerimizin akademik, sosyal ve manevi gelişimini ön planda tutuyoruz.</p>
+                <div className="footer-social">
+                  <a href="https://www.facebook.com/18MartSiracKoleji/" className="social-icon"><i className="fab fa-facebook-f"></i></a>
+                  <a href="https://www.instagram.com/18martsirackoleji/" className="social-icon"><i className="fab fa-instagram"></i></a>
+                  <a href="#" className="social-icon"><i className="fab fa-twitter"></i></a>
+                  <a href="#" className="social-icon"><i className="fab fa-youtube"></i></a>
+                </div>
+              </div>
+              <div className="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 className="footer-title">İletişim</h5>
+                <div className="footer-contact">
+                  <p><i className="fas fa-map-marker-alt"></i> Kalabaklı/Kepez, Çanakkale</p>
+                  <p><i className="fas fa-phone"></i> +90 543 717 8217</p>
+                  <p><i className="fas fa-envelope"></i> bilgi@18martsirackoleji.k12.tr</p>
+                  <p><i className="fas fa-clock"></i> Pzt-Cuma: 08:00 - 17:00</p>
+                </div>
+              </div>
+              <div className="col-lg-2 col-md-6 mb-4 mb-md-0">
+                <h5 className="footer-title">Hızlı Linkler</h5>
+                <ul className="footer-links list-unstyled">
+                  <li><a href="/">Anasayfa</a></li>
+                  <li><a href="/tarihce">Kurumsal</a></li>
+                  <li><a href="/galeri">Galeri</a></li>
+                  <li><a href="/iletisim">İletişim</a></li>
+                  <li><a href="/rehberlik">Rehberlik</a></li>
+                </ul>
+              </div>
+              <div className="col-lg-3 col-md-6">
+                <h5 className="footer-title">E-Bülten Aboneliği</h5>
+                <p>Etkinlik ve duyurularımızdan haberdar olmak için e-bültenimize abone olun.</p>
+                <form>
+                  <div className="input-group mb-3">
+                    <input type="email" className="form-control" placeholder="E-posta adresiniz" />
+                    <button className="btn btn-warning" type="submit">Abone Ol</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div className="copyright">
+              <small>&copy; 2007-2025 Sirac Koleji. Tüm Hakları Saklıdır.</small>
+            </div>
+          </div>
+        </footer>
+        <Script src="https://code.jquery.com/jquery-3.6.0.min.js" strategy="beforeInteractive" />
+        <Script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" strategy="beforeInteractive" />
+        <Script src="/js/script.js" strategy="beforeInteractive" />
+        <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" strategy="beforeInteractive" />
+    </>
   );
 }
