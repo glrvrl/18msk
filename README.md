@@ -1,6 +1,6 @@
-# 18 Mart Sıraç Koleji
+# 18 Mart Sirac Koleji
 
-Bu proje, 18 Mart Sıraç Koleji'nin web sitesini içermektedir. Site, okulun çeşitli bölümlerini ve faaliyetlerini tanıtan HTML sayfaları ve ilgili kaynaklardan oluşmaktadır.
+Bu proje, 18 Mart Sirac Koleji'nin web sitesini içermektedir. Site, okulun çeşitli bölümlerini ve faaliyetlerini tanıtan HTML sayfaları ve ilgili kaynaklardan oluşmaktadır.
 
 ## İçerik
 - **HTML Sayfaları**: Okulun farklı bölümleri ve faaliyetleri hakkında bilgi veren sayfalar.
