@@ -1,0 +1,481 @@
+{
+  "homepage": {
+    "hero": {
+      "title": "Geleceğe Yön Veren Eğitim",
+      "description": "Montessori destekli yaklaşımımızla özgüvenli, erdemli, üretken ve değerlerine sahip çıkan bireyler yetiştiriyoruz."
+    },
+    "services": {
+      "title": "En İyi Hizmetlerimiz",
+      "description": "Çocuklarınızın gelişimi için özel olarak tasarlanmış programlar",
+      "items": [
+        {
+          "icon": "fas fa-futbol",
+          "title": "Spor Sınıfı",
+          "description": "Çocukların fiziksel gelişimini destekleyen, eğlenceli ve güvenli spor aktiviteleri."
+        },
+        {
+          "icon": "fas fa-palette",
+          "title": "Resim Sınıfı",
+          "description": "Yaratıcılıklarını geliştirmek için özel olarak tasarlanmış sanat atölyeleri."
+        },
+        {
+          "icon": "fas fa-music",
+          "title": "Müzik ve Dans",
+          "description": "Ritm duygusu ve beden koordinasyonunu geliştiren müzik ve dans dersleri."
+        },
+        {
+          "icon": "fas fa-book",
+          "title": "Okuma Köşesi",
+          "description": "Erken yaşta okuma alışkanlığı kazandıran zengin kütüphane ve etkinlikler."
+        },
+        {
+          "icon": "fas fa-seedling",
+          "title": "Doğa Atölyesi",
+          "description": "Çocukların doğayı keşfedeceği ve çevre bilinci kazanacağı etkinlikler."
+        },
+        {
+          "icon": "fas fa-utensils",
+          "title": "Sağlıklı Beslenme",
+          "description": "Uzman diyetisyenler tarafından hazırlanan sağlıklı ve lezzetli menüler."
+        }
+      ]
+    },
+    "activities": {
+      "title": "Yakın Zamanda Yaptıklarımız",
+      "items": [
+        {
+          "image": "../image/kitap/2.JPG",
+          "alt": "Kitap Okuma Etkinliği",
+          "date": "15 Mayıs 2023",
+          "title": "Kitap Okuma Etkinliği",
+          "description": "Öğrencilerimizle birlikte gerçekleştirdiğimiz kitap okuma etkinliğinden kareler."
+        },
+        {
+          "image": "../image/tekvando/DOGAL YURMEK.jpg",
+          "alt": "Etkinlik Görseli",
+          "date": "18 Mayıs 2023",
+          "title": "Doğa Yürüyüşü",
+          "description": "Öğrencilerimizle doğayla iç içe güzel bir yürüyüş gerçekleştirdik."
+        },
+        {
+          "image": "../image/manevi eğitim/1  (3).JPG",
+          "alt": "Gelişim Atölyesi",
+          "date": "22 Mayıs 2023",
+          "title": "Gelişim Atölyesi",
+          "description": "Yaratıcı drama, iletişim ve ekip çalışması üzerine atölye etkinlikleri."
+        }
+      ]
+    },
+    "testimonials": {
+      "title": "Mutlu Müşterilerimiz!",
+      "description": "Velilerimizin Sirac Koleji hakkındaki düşünceleri",
+      "items": [
+        {
+          "quote": "Çocuğum Sirac Koleji'ne başladığından beri sosyal becerilerinde inanılmaz bir gelişme gördük. Öğretmenlerin ilgisi ve sıcak yaklaşımı için teşekkür ederiz.",
+          "image": "https://randomuser.me/api/portraits/women/65.jpg",
+          "name": "Elif Öztürk",
+          "relation": "Ahmet'in Annesi"
+        },
+        {
+          "quote": "Oğlum her sabah okula gitmek için can atıyor. Zengin aktiviteler ve güvenli ortam sayesinde biz de çok memnunuz. Kesinlikle tavsiye ediyorum.",
+          "image": "https://randomuser.me/api/portraits/men/41.jpg",
+          "name": "Varol Arslan",
+          "relation": "Efe'nin Babası"
+        }
+      ]
+    }
+  },
+  "iletisim": {
+    "hero": {
+      "title": "Bizimle İletişime Geçin",
+      "description": "Soru, görüş ve önerileriniz için aşağıdaki iletişim kanallarını kullanabilir veya iletişim formunu doldurabilirsiniz."
+    },
+    "contact": {
+      "title": "İletişim Formu",
+      "description": "Sorularınız için bize ulaşın, en kısa sürede yanıtlayalım",
+      "info": {
+        "title": "İletişim Bilgilerimiz",
+        "details": [
+          {
+            "icon": "fas fa-map-marker-alt",
+            "title": "Adres",
+            "text": "Kalabaklı köyü No:25 Kepez, Çanakkale, Türkiye"
+          },
+          {
+            "icon": "fas fa-phone-alt",
+            "title": "Telefon",
+            "text": "+90 543 717 8217"
+          },
+          {
+            "icon": "fas fa-envelope",
+            "title": "E-posta",
+            "text": "bilgi@sirackoleji.k12.tr"
+          },
+          {
+            "icon": "fas fa-clock",
+            "title": "Çalışma Saatleri",
+            "text": "Pazartesi - Cuma: 08:00 - 17:00 | Cumartesi: 09:00 - 14:00 | Pazar: Kapalı"
+          }
+        ]
+      }
+    }
+  },
+  "anlayis": {
+    "hero": {
+      "title": "Eğitim Anlayışımız",
+      "description": "Montessori destekli eğitim yaklaşımımızla, öğrencilerimizin bireysel potansiyellerini keşfetmelerine olanak tanıyoruz."
+    },
+    "content": {
+      "title": "Eğitim Felsefemiz",
+      "description": "Eğitim anlayışımız, öğrencilerimizin sadece akademik başarı değil, aynı zamanda manevi ve sosyal gelişimlerini de hedefler.",
+      "sections": [
+        {
+          "title": "Bireysel Öğrenme",
+          "text": "Her çocuğun öğrenme hızı ve tarzı farklıdır. Bu nedenle, bireysel öğrenme planları oluşturarak öğrencilerimizin ihtiyaçlarına özel çözümler sunuyoruz."
+        },
+        {
+          "title": "Değerler Eğitimi",
+          "text": "Erdem, dürüstlük ve sorumluluk gibi temel değerleri öğrencilerimize kazandırmak, eğitim anlayışımızın temel taşlarından biridir."
+        },
+        {
+          "title": "Yaratıcı Düşünme",
+          "text": "Öğrencilerimizin problem çözme becerilerini geliştirmek ve yaratıcı düşünmeyi teşvik etmek için çeşitli atölye ve etkinlikler düzenliyoruz."
+        }
+      ]
+    }
+  },
+  "misyon": {
+    "hero": {
+      "title": "Misyon & Vizyon",
+      "description": "Geleceğin liderlerini yetiştirmek için değerlerimizden ödün vermeden çalışıyoruz."
+    },
+    "content": {
+      "title": "Misyonumuz ve Vizyonumuz",
+      "sections": [
+        {
+          "title": "Misyon",
+          "text": "Öğrencilerimize akademik, sosyal ve manevi alanlarda en iyi eğitimi sunarak, özgüvenli, erdemli ve üretken bireyler yetiştirmek."
+        },
+        {
+          "title": "Vizyon",
+          "text": "Eğitimde öncü bir kurum olarak, öğrencilerimizin potansiyellerini en üst düzeye çıkararak topluma ve dünyaya değer katan bireyler olmalarını sağlamak."
+        }
+      ]
+    }
+  },
+  "tarihce": {
+    "hero": {
+      "title": "Tarihçemiz",
+      "description": "2007 yılından beri eğitimde kalite ve değerlerimizle fark yaratıyoruz."
+    },
+    "content": {
+      "title": "Geçmişten Günümüze",
+      "text": "Sirac Koleji, 2007 yılında Çanakkale'de kurulmuş olup, o günden bu yana binlerce öğrenciye eğitim vermiştir. Kuruluşumuzdan itibaren, öğrencilerimizin sadece akademik başarılarını değil, aynı zamanda manevi ve sosyal gelişimlerini de ön planda tuttuk. Yıllar içinde birçok yenilikçi eğitim programı ve atölye çalışması başlatarak bölgemizde öncü bir eğitim kurumu haline geldik."
+    }
+  },
+  "kultur": {
+    "hero": {
+      "title": "Okul Kültürü",
+      "description": "Birlikte öğrenme, paylaşma ve büyüme ortamı sunuyoruz."
+    },
+    "content": {
+      "title": "Kültürel Değerlerimiz",
+      "sections": [
+        {
+          "title": "Saygı ve Hoşgörü",
+          "text": "Okulumuzda her bireyin farklılığına saygı gösterilir ve hoşgörü kültürü teşvik edilir."
+        },
+        {
+          "title": "İşbirliği",
+          "text": "Öğrencilerimiz, öğretmenlerimiz ve velilerimizle birlikte bir aile gibi çalışır, ortak hedefler için işbirliği yaparız."
+        },
+        {
+          "title": "Sorumluluk",
+          "text": "Öğrencilerimize sorumluluk bilinci aşılayarak, kendi kararlarını alabilen bireyler olmalarını sağlarız."
+        }
+      ]
+    }
+  },
+  "manevi": {
+    "hero": {
+      "title": "Manevi Eğitim",
+      "description": "Öğrencilerimize değerlerimizi ve manevi mirasımızı aktarıyoruz."
+    },
+    "content": {
+      "title": "Manevi Gelişim Programı",
+      "text": "Manevi eğitim programımız, öğrencilerimizin ahlaki değerler, empati ve toplumsal sorumluluk gibi konularda gelişimini destekler. Bu program, öğrencilerimizin sadece akademik başarı değil, aynı zamanda ruhsal olgunluk kazanmasını hedefler.",
+      "images": [
+        {
+          "src": "../image/manevi eğitim/1  (1).JPG",
+          "alt": "Manevi Eğitim 1"
+        },
+        {
+          "src": "../image/manevi eğitim/1  (2).JPG",
+          "alt": "Manevi Eğitim 2"
+        },
+        {
+          "src": "../image/manevi eğitim/1  (3).JPG",
+          "alt": "Manevi Eğitim 3"
+        }
+      ]
+    }
+  },
+  "degerler": {
+    "hero": {
+      "title": "Değerler Eğitimi",
+      "description": "Temel insani değerleri öğrencilerimize kazandırmayı hedefliyoruz."
+    },
+    "content": {
+      "title": "Değerler Eğitimi Programı",
+      "text": "Değerler eğitimi, öğrencilerimizin dürüstlük, adalet, sevgi, saygı ve sorumluluk gibi evrensel değerleri içselleştirmesini sağlar. Bu program, öğrencilerimizin sadece iyi birer öğrenci değil, aynı zamanda iyi birer insan olmalarını destekler."
+    }
+  },
+  "yabancidil": {
+    "hero": {
+      "title": "Yabancı Dil Eğitimi",
+      "description": "Küresel dünyada iletişim kurabilen bireyler yetiştiriyoruz."
+    },
+    "content": {
+      "title": "Yabancı Dil Programı",
+      "text": "Yabancı dil eğitimimiz, öğrencilerimizin İngilizceyi akıcı bir şekilde konuşabilmesini ve uluslararası platformlarda kendilerini ifade edebilmesini hedefler. Erken yaşta başlayan dil eğitimi, öğrencilerimizin dil becerilerini doğal bir şekilde geliştirmelerine olanak tanır.",
+      "images": [
+        {
+          "src": "../image/ingilizce/1.JPG",
+          "alt": "İngilizce Eğitimi 1"
+        },
+        {
+          "src": "../image/ingilizce/2.JPG",
+          "alt": "İngilizce Eğitimi 2"
+        }
+      ]
+    }
+  },
+  "rehberlik": {
+    "hero": {
+      "title": "Rehberlik Hizmetleri",
+      "description": "Öğrencilerimizin akademik ve kişisel gelişimlerini destekliyoruz."
+    },
+    "content": {
+      "title": "Rehberlik ve Danışmanlık",
+      "text": "Rehberlik hizmetlerimiz, öğrencilerimizin akademik başarılarını artırmak, sosyal becerilerini geliştirmek ve kişisel sorunlarına çözüm bulmak için tasarlanmıştır. Uzman rehber öğretmenlerimiz, her öğrencinin ihtiyaçlarına özel destek sunar."
+    }
+  },
+  "robotik": {
+    "hero": {
+      "title": "Robotik Kodlama",
+      "description": "Geleceğin teknolojisini bugünden öğreniyorlar."
+    },
+    "content": {
+      "title": "Robotik ve Kodlama Atölyesi",
+      "text": "Robotik kodlama atölyelerimizde öğrencilerimiz, programlama ve mühendislik becerilerini geliştirir. Bu atölyeler, öğrencilerimizin problem çözme yeteneklerini ve yaratıcılıklarını artırmayı hedefler.",
+      "images": [
+        {
+          "src": "../image/robotik kodlama/1.JPG",
+          "alt": "Robotik Kodlama 1"
+        },
+        {
+          "src": "../image/robotik kodlama/2.JPG",
+          "alt": "Robotik Kodlama 2"
+        }
+      ]
+    }
+  },
+  "gorsel": {
+    "hero": {
+      "title": "Görsel Sanatlar ve Ahşap",
+      "description": "Sanatla yaratıcılıklarını keşfediyorlar."
+    },
+    "content": {
+      "title": "Sanat ve Ahşap Atölyesi",
+      "text": "Görsel sanatlar ve ahşap atölyelerimizde öğrencilerimiz, resim, heykel ve ahşap işleme gibi farklı sanat dallarında beceriler kazanır. Bu atölyeler, öğrencilerimizin estetik anlayışlarını ve el becerilerini geliştirmeyi amaçlar.",
+      "images": [
+        {
+          "src": "../image/görsel sanatlar ve ahşap/1.HEIC",
+          "alt": "Görsel Sanatlar 1"
+        },
+        {
+          "src": "../image/görsel sanatlar ve ahşap/2.HEIC",
+          "alt": "Görsel Sanatlar 2"
+        }
+      ]
+    }
+  },
+  "mutfak": {
+    "hero": {
+      "title": "Mutfak Atölyesi",
+      "description": "Yemek yapmayı öğrenirken eğleniyorlar."
+    },
+    "content": {
+      "title": "Mutfak Sanatları Atölyesi",
+      "text": "Mutfak atölyelerimizde öğrencilerimiz, sağlıklı beslenme alışkanlıkları edinir ve yemek yapma becerileri kazanır. Bu atölyeler, öğrencilerimizin sorumluluk duygusunu ve yaratıcılığını artırmayı hedefler.",
+      "images": [
+        {
+          "src": "../image/mutfak atölyesi/1.JPG",
+          "alt": "Mutfak Atölyesi 1"
+        },
+        {
+          "src": "../image/mutfak atölyesi/2.JPG",
+          "alt": "Mutfak Atölyesi 2"
+        }
+      ]
+    }
+  },
+  "tasavvuf": {
+    "hero": {
+      "title": "Tasavvuf Müziği",
+      "description": "Müzikle ruhsal bir yolculuk."
+    },
+    "content": {
+      "title": "Tasavvuf Müziği Atölyesi",
+      "text": "Tasavvuf müziği atölyelerimizde öğrencilerimiz, geleneksel Türk müziğini ve tasavvuf kültürünü tanır. Bu atölyeler, öğrencilerimizin müzik yeteneklerini geliştirmeyi ve manevi bir derinlik kazanmalarını amaçlar."
+    }
+  },
+  "kozmik": {
+    "hero": {
+      "title": "Montessori Kozmik Eğitim",
+      "description": "Evreni keşfetmek için bir adım."
+    },
+    "content": {
+      "title": "Kozmik Eğitim Programı",
+      "text": "Montessori kozmik eğitim programımız, öğrencilerimizin evreni, doğayı ve insanlık tarihini anlamalarını sağlar. Bu program, öğrencilerimizin çevrelerine karşı merak ve sorumluluk geliştirmelerine yardımcı olur.",
+      "images": [
+        {
+          "src": "../image/montessori/1.PNG",
+          "alt": "Montessori Kozmik 1"
+        },
+        {
+          "src": "../image/montessori/2.PNG",
+          "alt": "Montessori Kozmik 2"
+        }
+      ]
+    }
+  },
+  "oyun": {
+    "hero": {
+      "title": "Oyun ve Fiziki Etkinlikler",
+      "description": "Eğlenerek öğreniyorlar."
+    },
+    "content": {
+      "title": "Oyun ve Spor Etkinlikleri",
+      "text": "Oyun ve fiziki etkinliklerimiz, öğrencilerimizin fiziksel gelişimlerini desteklerken aynı zamanda sosyal becerilerini artırmayı hedefler. Bu etkinlikler, öğrencilerimizin enerji dolu bir şekilde öğrenmelerine olanak tanır."
+    }
+  },
+  "kulupler": {
+    "hero": {
+      "title": "Kulüpler ve P4C",
+      "description": "Farklı ilgi alanlarında gelişim fırsatları."
+    },
+    "content": {
+      "title": "Kulüp Çalışmaları ve Çocuklar için Felsefe (P4C)",
+      "text": "Kulüplerimiz, öğrencilerimizin ilgi alanlarına göre çeşitli aktiviteler sunar. P4C (Çocuklar için Felsefe) programımız ise eleştirel düşünme ve sorgulama becerilerini geliştirmeyi amaçlar."
+    }
+  },
+  "sosyalyardim": {
+    "hero": {
+      "title": "Sosyal Yardım Projeleri",
+      "description": "Topluma duyarlı bireyler yetiştiriyoruz."
+    },
+    "content": {
+      "title": "Sosyal Sorumluluk Projeleri",
+      "text": "Sosyal yardım projelerimiz, öğrencilerimizin toplumsal sorunlara duyarlılık geliştirmesini ve çevrelerine katkıda bulunmasını sağlar. Bu projeler, öğrencilerimizin empati ve dayanışma duygularını güçlendirir.",
+      "images": [
+        {
+          "src": "../image/sosyal yardımlaşma/1.HEIC",
+          "alt": "Sosyal Yardım 1"
+        },
+        {
+          "src": "../image/sosyal yardımlaşma/2.JPG",
+          "alt": "Sosyal Yardım 2"
+        }
+      ]
+    }
+  },
+  "helalVeSaglikli": {
+    "hero": {
+      "title": "Helal ve Sağlıklı",
+      "description": "Sağlıklı beslenme ve helal gıda bilinci."
+    },
+    "content": {
+      "title": "Helal ve Sağlıklı Beslenme Programı",
+      "text": "Helal ve sağlıklı beslenme programımız, öğrencilerimize dengeli beslenme alışkanlıkları kazandırırken, helal gıda standartlarına uygun bir yaşam tarzını benimsetmeyi amaçlar.",
+      "images": [
+        {
+          "src": "../image/helal ve saglik/saglik1.avif",
+          "alt": "Helal ve Sağlıklı 1"
+        },
+        {
+          "src": "../image/helal ve saglik/saglik2.avif",
+          "alt": "Helal ve Sağlıklı 2"
+        }
+      ]
+    }
+  },
+  "galeri": {
+    "hero": {
+      "title": "Galeri",
+      "description": "Okulumuzdan kareler ve etkinliklerimizden görüntüler."
+    },
+    "content": {
+      "title": "Fotoğraf Galerisi",
+      "categories": [
+        {
+          "name": "Okul Görselleri",
+          "images": [
+            {
+              "src": "../image/okul görseli/2.JPG",
+              "alt": "Okul Görseli 1"
+            },
+            {
+              "src": "../image/okul görseli/3.JPG",
+              "alt": "Okul Görseli 2"
+            }
+          ]
+        },
+        {
+          "name": "Etkinlikler",
+          "images": [
+            {
+              "src": "../image/kitap/1.JPG",
+              "alt": "Kitap Okuma Etkinliği"
+            },
+            {
+              "src": "../image/tekvando/DOGAL YURMEK.jpg",
+              "alt": "Doğa Yürüyüşü"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "ogretmenKadromuz": {
+    "hero": {
+      "title": "Öğretmen Kadromuz",
+      "description": "Deneyimli ve özverili eğitim kadromuzla tanışın."
+    },
+    "content": {
+      "title": "Eğitim Kadromuz",
+      "teachers": [
+        {
+          "name": "Başak Kökçak",
+          "title": "Sınıf Öğretmeni",
+          "image": "../image/ogretmen/basak.kokcak.jpg"
+        },
+        {
+          "name": "Dilek Hanım",
+          "title": "Rehber Öğretmen",
+          "image": "../image/ogretmen/dilek.jpg"
+        },
+        {
+          "name": "Figen Aksoy",
+          "title": "İngilizce Öğretmeni",
+          "image": "../image/ogretmen/figen aksoy.jpg"
+        },
+        {
+          "name": "Furgan Köksal",
+          "title": "Beden Eğitimi Öğretmeni",
+          "image": "../image/ogretmen/furgan.koksal.jpg"
+        }
+      ]
+    }
+  }
+}

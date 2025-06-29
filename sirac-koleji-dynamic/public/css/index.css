@@ -1,0 +1,377 @@
+/* Genel Ayarlar */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1, h4, h5 {
+  font-weight: 600;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #1e2a38;
+  padding: 1rem 0;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar-brand i {
+  font-size: 30px;
+  color: #ffc107;
+}
+
+.navbar-brand h1 {
+  font-size: 1.5rem;
+  margin: 0;
+  color: #fff;
+}
+
+.navbar-brand span {
+  color: #ffc107;
+}
+
+.nav-link {
+  color: #fff !important;
+  font-weight: 500;
+}
+
+.nav-link:hover, .dropdown-menu a:hover {
+  color: #ffc107 !important;
+}
+/* Fade in animation */
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 1.2s ease-out forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobilde buton hizalaması */
+@media (max-width: 576px) {
+  .hero-video-section .position-absolute.bottom-0.end-0 {
+    left: 50%;
+    transform: translateX(-50%);
+    right: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+/* Hero Bölümü */
+.hero-section {
+ 
+  color: #fff;
+  padding: 120px 0;
+  text-align: center;
+  background-color: #333; /* fallback */
+}
+
+.hero-section h1 {
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+/* Özellik Kutuları */
+.highlight-box {
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.highlight-box:hover {
+  transform: translateY(-5px);
+}
+/* Başlık ve açıklamalara gölge ver */
+.text-shadow {
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+/* Fade-in animasyonu */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-fadein {
+  animation: fadeInUp 1.5s ease-out;
+}
+
+
+/* Footer */
+footer {
+  background-color: #1e2a38;
+  color: #d1d1d1;
+  padding: 60px 0 20px;
+  font-size: 0.95rem;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.footer-logo i {
+  font-size: 24px;
+  color: #ffc107;
+}
+
+.footer-logo h5 {
+  font-size: 1.3rem;
+  margin: 0;
+  color: #fff;
+}
+
+.footer-logo span {
+  color: #ffc107;
+}
+
+.footer-social {
+  margin-top: 15px;
+}
+
+.footer-social a {
+  color: #ffc107;
+  margin-right: 12px;
+  font-size: 1.2rem;
+}
+
+.footer-social a:hover {
+  color: #fff;
+}
+
+.footer-title {
+  color: #fff;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+.footer-contact p,
+.footer-links li a {
+  color: #d1d1d1;
+  margin-bottom: 10px;
+}
+
+.footer-links li a:hover {
+  color: #ffc107;
+}
+
+.input-group input {
+  border-radius: 0;
+}
+
+.input-group .btn {
+  border-radius: 0;
+  font-weight: 600;
+}
+
+footer form input::placeholder {
+  font-size: 0.9rem;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 40px;
+  border-top: 1px solid #444;
+  padding-top: 15px;
+  font-size: 0.85rem;
+  color: #aaa;
+}
+/* GALLERY SLIDER GELİŞTİRME */
+.activities-section {
+  background-color: #f9f9f9;
+}
+
+.section-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #222;
+}
+
+.activity-slider .activity-card {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.activity-slider .activity-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.activity-img img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.activity-slider .activity-card:hover .activity-img img {
+  transform: scale(1.05);
+}
+
+.activity-date {
+  font-size: 0.9rem;
+  color: #0d6efd; /* Bootstrap Primary */
+  letter-spacing: 0.05em;
+}
+
+.activity-title {
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: #222;
+}
+
+.activity-desc {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #555;
+}
+
+.activity-link {
+  font-weight: 600;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.activity-link:hover {
+  background-color: #0d6efd;
+  color: #fff;
+  text-decoration: none;
+}
+
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next {
+  position: absolute;
+  top: 40%;
+  background: rgba(13, 110, 253, 0.8);
+  color: white;
+  border-radius: 50%;
+  padding: 12px 15px;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+}
+
+.owl-carousel .owl-nav button.owl-prev:hover,
+.owl-carousel .owl-nav button.owl-next:hover {
+  background: #0a58ca;
+}
+
+.owl-carousel .owl-nav button.owl-prev {
+  left: -25px;
+}
+
+.owl-carousel .owl-nav button.owl-next {
+  right: -25px;
+}
+
+.owl-carousel .owl-dots {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.owl-carousel .owl-dots .owl-dot span {
+  width: 14px;
+  height: 14px;
+  background: #ccc;
+  display: inline-block;
+  border-radius: 50%;
+  margin: 0 6px;
+  transition: background-color 0.3s ease;
+}
+
+.owl-carousel .owl-dots .owl-dot.active span {
+  background: #0d6efd;
+}
+.activity-img img {
+  width: 100%;
+  height: 300px; /* Yüksekliği artırdım */
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15); /* Hafif gölge ekledim */
+  transition: transform 0.3s ease;
+}
+
+.activity-slider .activity-card {
+  margin: 0 10px; /* Kartlar arası biraz boşluk */
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12); /* Daha belirgin gölge */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.activity-slider .activity-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.2);
+}
+.activity-slider {
+  padding: 0 20px;
+}
+.activity-slider .owl-carousel {
+  margin: 0 auto;
+}
+.fade-in-up {
+  animation: fadeInUp 1s ease-out both;
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.hover-card:hover {
+  transform: translateY(-5px);
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+.activity-img img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
