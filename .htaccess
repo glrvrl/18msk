@@ -1,0 +1,123 @@
+# ######################################################################
+# ## .HTML UZANTISINI KALDIRMA VE YÖNLENDİRME
+# ######################################################################
+
+RewriteEngine On
+RewriteBase /
+
+# Kural 1: Tarayıcıda .html uzantısını kaldırır (301 Yönlendirme)
+# Örnek: /iletisim.html -> /iletisim
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^\ ]+)\.html
+RewriteRule ^([^\ ]+)\.html$ /$1 [R=301,L]
+
+# Kural 2: .html olmadan gelen isteği sunucu tarafında .html dosyasına yönlendirir
+# Örnek: Kullanıcı /iletisim yazdığında sunucu /iletisim.html dosyasını çalıştırır
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.*)$ $1.html [L]
+
+# ######################################################################
+# ## LITESPEED & TARAYICI ÖNBELLEKLEME (CACHE) AYARLARI
+# ######################################################################
+
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresDefault                          "access plus 1 month"
+  # CSS
+  ExpiresByType text/css                    "access plus 1 year"
+  # Data interchange
+  ExpiresByType application/atom+xml        "access plus 1 hour"
+  ExpiresByType application/rdf+xml         "access plus 1 hour"
+  ExpiresByType application/rss+xml         "access plus 1 hour"
+  ExpiresByType application/json            "access plus 0 seconds"
+  ExpiresByType application/ld+json         "access plus 0 seconds"
+  ExpiresByType application/schema+json     "access plus 0 seconds"
+  ExpiresByType application/vnd.geo+json    "access plus 0 seconds"
+  ExpiresByType application/xml             "access plus 0 seconds"
+  ExpiresByType text/xml                    "access plus 0 seconds"
+  # Favicon (cannot be renamed!)
+  ExpiresByType image/vnd.microsoft.icon    "access plus 1 week"
+  ExpiresByType image/x-icon                "access plus 1 week"
+  # HTML
+  ExpiresByType text/html                   "access plus 0 seconds"
+  # JavaScript
+  ExpiresByType application/javascript      "access plus 1 year"
+  ExpiresByType application/x-javascript    "access plus 1 year"
+  ExpiresByType text/javascript             "access plus 1 year"
+  # Manifest files
+  ExpiresByType application/manifest+json   "access plus 1 week"
+  ExpiresByType application/x-web-app-manifest+json "access plus 0 seconds"
+  ExpiresByType text/cache-manifest         "access plus 1 week"
+  # Media
+  ExpiresByType audio/ogg                   "access plus 1 month"
+  ExpiresByType image/bmp                   "access plus 1 month"
+  ExpiresByType image/gif                   "access plus 1 month"
+  ExpiresByType image/jpeg                  "access plus 1 month"
+  ExpiresByType image/png                   "access plus 1 month"
+  ExpiresByType image/svg+xml               "access plus 1 month"
+  ExpiresByType image/webp                  "access plus 1 month"
+  ExpiresByType video/mp4                   "access plus 1 month"
+  ExpiresByType video/ogg                   "access plus 1 month"
+  ExpiresByType video/webm                  "access plus 1 month"
+  # Web fonts
+  ExpiresByType font/collection             "access plus 1 month"
+  ExpiresByType font/otf                    "access plus 1 month"
+  ExpiresByType font/sfnt                   "access plus 1 month"
+  ExpiresByType font/ttf                    "access plus 1 month"
+  ExpiresByType font/woff                   "access plus 1 month"
+  ExpiresByType font/woff2                  "access plus 1 month"
+  ExpiresByType application/font-woff       "access plus 1 month"
+</IfModule>
+
+# ######################################################################
+# ## GZIP SIKIŞTIRMA AYARLARI
+# ######################################################################
+
+<IfModule mod_deflate.c>
+  # Sıkıştırılacak dosya türleri
+  AddOutputFilterByType DEFLATE application/atom+xml \
+                                application/javascript \
+                                application/json \
+                                application/ld+json \
+                                application/manifest+json \
+                                application/rdf+xml \
+                                application/rss+xml \
+                                application/schema+json \
+                                application/vnd.geo+json \
+                                application/vnd.ms-fontobject \
+                                application/x-font-ttf \
+                                application/x-web-app-manifest+json \
+                                application/xhtml+xml \
+                                application/xml \
+                                font/eot \
+                                font/otf \
+                                font/ttf \
+                                image/bmp \
+                                image/svg+xml \
+                                image/vnd.microsoft.icon \
+                                text/cache-manifest \
+                                text/css \
+                                text/html \
+                                text/javascript \
+                                text/plain \
+                                text/vcard \
+                                text/vnd.rim.location.xloc \
+                                text/vtt \
+                                text/x-component \
+                                text/x-cross-domain-policy \
+                                text/xml
+</IfModule>
+
+# ######################################################################
+# ## DİĞER PERFORMANS AYARLARI
+# ######################################################################
+
+# ETag'leri Kaldır
+<IfModule mod_headers.c>
+  Header unset ETag
+</IfModule>
+FileETag None
+
+# Standart Karakter Seti
+AddDefaultCharset UTF-8
