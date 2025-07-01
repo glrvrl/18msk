@@ -263,10 +263,12 @@
     }
     
     .form-group input:focus,
-    .form-group textarea:focus {
+    .form-group textarea:focus,
+    .form-group select:focus {
       border-color: var(--primary-color);
       box-shadow: 0 0 0 3px rgba(26, 86, 167, 0.1);
       outline: none;
+      color: #333;
     }
     
     .contact-form .btn {
@@ -553,7 +555,7 @@
           </div>
           <div class="contact-text">
             <h4>Adres</h4>
-            <p>Kalabaklı koyu No:25 Kepez, Çanakkale, Türkiye</p>
+            <p>Kalabaklı Köyü No:25 Kepez, Çanakkale, Türkiye</p>
           </div>
         </div>
         
@@ -573,7 +575,7 @@
           </div>
           <div class="contact-text">
             <h4>E-posta</h4>
-            <p>bilgi@18martsirackoleji.com</p>
+            <p>bilgi@18martsirackoleji.k12.tr</p>
           </div>
         </div>
         
@@ -608,7 +610,7 @@
         
         <div class="form-group">
           <label for="subject"><i class="fas fa-tag"></i> Konu</label>
-          <select id="subject" required style="width: 100%; padding: 14px 20px; border: 1px solid #ddd; border-radius: 8px; font-size: 1rem; background-color: white; transition: all 0.3s ease; cursor: pointer;">
+          <select id="subject" required style="width: 100%; padding: 14px 20px; border: 1px solid #ddd; border-radius: 8px; font-size: 1rem; background-color: white; transition: all 0.3s ease; cursor: pointer; font-family: 'Poppins', sans-serif; color: #333;">
             <option value="" disabled selected>Konu seçiniz</option>
             <option value="genel">Genel Soru</option>
             <option value="kayit">Kayıt Bilgileri</option>
@@ -665,7 +667,7 @@
       <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
         <h5 class="footer-title">İletişim</h5>
         <div class="footer-contact">
-          <p><i class="fas fa-map-marker-alt"></i> Kalabaklı köyü No:25 Kepez, Çanakkale</p>
+          <p><i class="fas fa-map-marker-alt"></i> Kalabaklı Köyü No:25 Kepez, Çanakkale</p>
           <p><i class="fas fa-phone"></i> +90 543 717 8217</p>
           <p><i class="fas fa-envelope"></i> bilgi@18martsirackoleji.k12.tr</p>
           <p><i class="fas fa-clock"></i> Pzt-Cuma: 08:00 - 17:00</p>
