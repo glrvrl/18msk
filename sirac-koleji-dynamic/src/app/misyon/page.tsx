@@ -27,7 +27,7 @@ export default function Misyon() {
               left: 0;
               width: 100%;
               height: 100%;
-              background: url('/image/anasayfa1.JPG') repeat;
+              background: url('/image/anasayfa-sirac-koleji.jpg') repeat;
               opacity: 0.03;
               z-index: 0;
             }

@@ -16,7 +16,7 @@ export default function Anlayis() {
           {`
             .education-header {
               background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
-                          url('/image/anasayfa1.JPG') center/cover no-repeat;
+                          url('/image/anasayfa-sirac-koleji.jpg') center/cover no-repeat;
               color: white;
               padding: 160px 0 120px;
               min-height: 500px;

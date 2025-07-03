@@ -26,7 +26,7 @@ export default function Kultur() {
               left: 0;
               width: 100%;
               height: 100%;
-              background: url('/image/anasayfa1.JPG') repeat;
+              background: url('/image/anasayfa-sirac-koleji.jpg') repeat;
               opacity: 0.05;
               z-index: 0;
             }
@@ -241,7 +241,7 @@ export default function Kultur() {
             <div className="row g-4 align-items-center">
               <div className="col-lg-6">
                 <div className="history-image rounded-4 overflow-hidden shadow-lg">
-                  <img src="/image/anasayfa1.JPG"
+                  <img src="/image/anasayfa-sirac-koleji.jpg"
                     alt="Okul binamız" className="img-fluid w-100" />
                   <div className="year-badge">2016</div>
                 </div>

@@ -6,7 +6,8 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "veri-aktar": "node scripts/veri-aktar.js"
   },
   "dependencies": {
     "next": "15.3.4",
@@ -14,9 +15,12 @@
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
+    "@types/jquery": "^3.5.32",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "axios": "^1.10.0",
+    "cheerio": "^1.1.0",
     "typescript": "^5"
   }
 }

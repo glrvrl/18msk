@@ -171,7 +171,7 @@ export default function Tarihce() {
             <div className="row g-4 align-items-center">
               <div className="col-lg-6">
                 <div className="history-image rounded-4 overflow-hidden shadow-lg">
-                  <img src="/image/anasayfa1.JPG"
+                  <img src="/image/anasayfa-sirac-koleji.jpg"
                     alt="Okul binamız" className="img-fluid w-100" />
                   <div className="year-badge">2016</div>
                 </div>

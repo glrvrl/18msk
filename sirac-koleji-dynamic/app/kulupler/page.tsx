@@ -40,7 +40,7 @@ export default function Kulupler() {
             }
 
             .club-hero {
-              background: linear-gradient(135deg, rgba(26, 86, 167, 0.9), rgba(42, 157, 143, 0.9)), url('/image/anasayfa1.JPG') no-repeat center center/cover;
+              background: linear-gradient(135deg, rgba(26, 86, 167, 0.9), rgba(42, 157, 143, 0.9)), url('/image/anasayfa-sirac-koleji.jpg') no-repeat center center/cover;
               color: white;
               padding: 100px 0;
               text-align: center;

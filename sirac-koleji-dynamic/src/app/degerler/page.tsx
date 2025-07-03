@@ -16,7 +16,7 @@ export default function Degerler() {
           {`
             .hero-section {
               background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-                          url('/image/anasayfa1.JPG') center/cover no-repeat;
+                          url('/image/anasayfa-sirac-koleji.jpg') center/cover no-repeat;
               color: white;
               padding: 180px 0;
               text-align: center;

@@ -93,7 +93,7 @@ export default function Iletisim() {
             
             /* HERO SECTION */
             .contact-hero {
-              background: linear-gradient(rgba(26, 86, 167, 0.85), rgba(26, 86, 167, 0.85)), url('/image/anasayfa1.JPG') center center/cover no-repeat;
+              background: linear-gradient(rgba(26, 86, 167, 0.85), rgba(26, 86, 167, 0.85)), url('/image/anasayfa-sirac-koleji.jpg') center center/cover no-repeat;
               color: white;
               padding: 150px 0 100px;
               text-align: center;
