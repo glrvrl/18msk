@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "kulupler",
+  "info": {
+    "singularName": "kulup",
+    "pluralName": "kulupler",
+    "displayName": "Kulüp"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ad": {
+      "type": "string",
+      "required": true
+    },
+    "kisaAciklama": {
+      "type": "text",
+      "required": true
+    },
+    "detayliAciklama": {
+      "type": "richtext"
+    },
+    "resim": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "etkinlikler": {
+      "type": "richtext"
+    }
+  }
+}

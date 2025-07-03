@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sayfalar",
+  "info": {
+    "singularName": "sayfa",
+    "pluralName": "sayfalar",
+    "displayName": "Sayfa"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "baslik": {
+      "type": "string",
+      "required": true
+    },
+    "icerik": {
+      "type": "richtext",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "baslik"
+    }
+  }
+}

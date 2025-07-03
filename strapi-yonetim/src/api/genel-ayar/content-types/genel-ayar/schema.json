@@ -1,0 +1,42 @@
+{
+  "kind": "singleType",
+  "collectionName": "genel_ayarlar",
+  "info": {
+    "singularName": "genel-ayar",
+    "pluralName": "genel-ayarlar",
+    "displayName": "Genel Ayarlar"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "siteBasligi": {
+      "type": "string",
+      "required": true
+    },
+    "siteLogosu": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "footerMetni": {
+      "type": "text"
+    },
+    "facebookUrl": {
+      "type": "string"
+    },
+    "instagramUrl": {
+      "type": "string"
+    },
+    "twitterUrl": {
+      "type": "string"
+    },
+    "youtubeUrl": {
+      "type": "string"
+    }
+  }
+}

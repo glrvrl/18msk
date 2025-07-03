@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ogretmenler",
+  "info": {
+    "singularName": "ogretmen",
+    "pluralName": "ogretmenler",
+    "displayName": "Öğretmen"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "adSoyad": {
+      "type": "string",
+      "required": true
+    },
+    "brans": {
+      "type": "string"
+    },
+    "fotograf": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

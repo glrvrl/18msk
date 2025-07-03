@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "galeri_resimleri",
+  "info": {
+    "singularName": "galeri-resim",
+    "pluralName": "galeri-resimleri",
+    "displayName": "Galeri Resmi"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "resim": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "aciklama": {
+      "type": "string"
+    }
+  }
+}
